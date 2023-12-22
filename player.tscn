@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bu3x1oqi3iqgy"]
+[gd_scene load_steps=15 format=3 uid="uid://bu3x1oqi3iqgy"]
 
 [ext_resource type="Texture2D" uid="uid://dngl8u3avvw4n" path="res://assets/player/hurt/player-hurt-1.png" id="1_1ogtv"]
 [ext_resource type="Texture2D" uid="uid://cu3ccu3628npi" path="res://assets/player/hurt/player-hurt-2.png" id="2_2t67d"]
@@ -67,9 +67,18 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_glfhp"]
+size = Vector2(13, 22)
+
 [node name="Player" type="Area2D"]
+position = Vector2(32, 26)
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lejdu")
 animation = &"run"
+frame_progress = 0.202409
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 5)
+shape = SubResource("RectangleShape2D_glfhp")
