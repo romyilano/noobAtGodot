@@ -8,7 +8,16 @@ var screensize = Vector2(480,720)
 func _ready():
 	pass # Replace with function body.
 
+func start():
+	set_process(true)
+	position = screensize / 2
+	$AnimatedSprite2D.animation = "idle"
 
+func die():
+	$AnimatedSprite2D.animation = "hurt"
+	# stop calling process() every frame
+	set_process(false)
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	get_input()
