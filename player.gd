@@ -55,3 +55,12 @@ func get_input():
 	# note that velocity is normalized
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
+
+
+func _on_area_entered(area):
+	if area.is_in_group("coins"):
+		area.pickup()
+		pickup.emit()
+	if area.is_in_group("obstacles"):
+		hurt.emit()
+		die()
