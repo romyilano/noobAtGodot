@@ -69,7 +69,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_glfhp"]
-size = Vector2(13, 21)
+size = Vector2(17.5, 24)
 
 [node name="Player" type="Area2D"]
 position = Vector2(29, 21)
@@ -84,7 +84,7 @@ frame_progress = 0.265474
 offset = Vector2(2.08165e-12, -5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -1.5)
+position = Vector2(-0.25, 0)
 shape = SubResource("RectangleShape2D_glfhp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
