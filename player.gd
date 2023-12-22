@@ -28,6 +28,8 @@ func _process(delta):
 		$AnimatedSprite2D.flip_h = true
 	else:
 		$AnimatedSprite2D.flip_h = false
+		
+	$AnimatedSprite2D.play()
 
 # classic 2D game controls
 func get_input():
