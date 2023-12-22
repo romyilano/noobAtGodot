@@ -73,6 +73,7 @@ size = Vector2(13, 21)
 
 [node name="Player" type="Area2D"]
 position = Vector2(29, 21)
+scale = Vector2(2, 2)
 script = ExtResource("1_2a3f2")
 metadata/_edit_group_ = true
 
