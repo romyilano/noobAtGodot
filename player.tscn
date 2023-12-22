@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bu3x1oqi3iqgy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lejdu"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Player" type="Area2D"]
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lejdu")
+animation = &"idle"
