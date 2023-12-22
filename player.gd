@@ -1,4 +1,7 @@
 extends Area2D
+# custom signals player emits when they touch a coin or an obstacle
+signal pickup
+signal hurt
 
 @export var speed = 350
 var velocity = Vector2()
