@@ -16,6 +16,18 @@ func _process(delta):
 	position += velocity * delta
 	position.x = clamp(position.x, 0, screensize.x)
 	position.y = clamp(position.y, 0, screensize.y)
+	
+	if velocity.length() > 0:
+		$AnimatedSprite2D.animation = "run"
+		#flips it
+		$AnimatedSprite2D.flip_h = velocity.x < 0
+	else:
+		$AnimatedSprite2D.animation = "idle"
+		
+	if velocity.x < 0:
+		$AnimatedSprite2D.flip_h = true
+	else:
+		$AnimatedSprite2D.flip_h = false
 
 # classic 2D game controls
 func get_input():

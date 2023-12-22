@@ -79,9 +79,11 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lejdu")
 animation = &"run"
-frame_progress = 0.671793
+frame_progress = 0.602003
 offset = Vector2(2.08165e-12, -5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -1.5)
 shape = SubResource("RectangleShape2D_glfhp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
