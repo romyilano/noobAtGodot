@@ -47,3 +47,7 @@ text = "Coin Dash!"
 label_settings = SubResource("LabelSettings_ts0y6")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
