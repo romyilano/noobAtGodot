@@ -35,6 +35,7 @@ func new_game():
 	spawn_coins()
 
 func spawn_coins():
+	$LevelSound.play()
 	for i in level + 4:
 		var c = coin_scene.instantiate()
 		add_child(c)
@@ -52,10 +53,12 @@ func _on_player_hurt():
 
 
 func _on_player_pickup():
+	$CoinSound.play()
 	score +=1 
 	$HUD.update_score(score)
 	
 func game_over():
+	$EndSound.play()
 	playing = false
 	$GameTimer.stop()
 	# remove all remaining coins. nice
