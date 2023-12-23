@@ -16,8 +16,6 @@ func _ready():
 	screensize = get_viewport().get_visible_rect().size
 	$Player.screensize = screensize
 	$Player.hide()
-	
-	new_game()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
