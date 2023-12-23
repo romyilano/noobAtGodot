@@ -18,7 +18,10 @@ script = ExtResource("1_tk1jh")
 [node name="MarginContainer" type="Container" parent="."]
 anchors_preset = 10
 anchor_right = 1.0
+offset_bottom = 57.0
 grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme = SubResource("Theme_7iwip")
 
 [node name="Score" type="Label" parent="MarginContainer"]
