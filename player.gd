@@ -64,3 +64,6 @@ func _on_area_entered(area):
 	if area.is_in_group("obstacles"):
 		hurt.emit()
 		die()
+	if area.is_in_group("powerups"):
+		area.pickup()
+		pickup.emit("powerup")
